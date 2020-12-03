@@ -1,0 +1,119 @@
+body{
+    background-color:  hsl(223, 25%, 40%);
+}
+h2{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.select, .stopReset, .input, .box{
+    padding: 20px;
+}
+.select, .displayTimer{
+    margin: 0px;
+}
+.box{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 58px;
+}
+.selectpomo, .selectshort, .selectlong{
+    font-size: 22px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+.select{
+    display: flex;
+    justify-content: space-around;
+}
+.stopReset{
+    display: flex;
+    justify-content: space-evenly;
+}
+.stop, .reset{
+    padding: 10px 40px;
+    font-size: 25px;
+    background-color: white;
+    border: 1px solid white;
+}
+ .selectshort, .selectlong{
+    padding-left: 30px;
+    padding-right: 30px;
+} 
+.display{
+    /* border: 1px solid white; */
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 15rem;
+    font-weight: 10x;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add{
+    padding: 10px 30px;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    box-shadow: none;
+}
+.selectshort.clicked{
+    transition: 2s;
+}
+@media(max-width: 750px){
+    .stopReset{
+        display: flex;
+        flex-direction: column;
+    }
+    .stop, .reset{
+        padding: 5px 10px;
+        font-size: 22px;
+        margin: 5px;
+    }
+}
+@media(max-width: 600px){
+    .display{
+        font-size: 10rem;
+    }
+}
+@media(max-width: 430px){
+    .display{
+        font-size: 5rem;
+    }
+    .add{
+        font-size: 18px;
+    }
+    .selectpomo, .selectshort, .selectlong{
+        font-size: 18px;
+    }
+}
+@media(max-width: 300px){
+    .select{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        width: 80%;
+    }
+}
+@media(max-width: 220px){
+    .box{
+        width: 90%; 
+    }
+    .display{
+        font-size: 3rem;
+    }
+    .stop, .reset{
+        padding: 5px 10px;
+        font-size: 18px;
+        margin: 5px;
+    }
+    .add{
+        font-size: 15px;
+    }
+
+}
